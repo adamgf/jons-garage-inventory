@@ -1,1 +1,9 @@
 streamlit
+os
+dotenv
+openai
+langchain_community.chat_models
+langchain.prompts
+langchain.chains
+langchain.memory
+llama_index.core
