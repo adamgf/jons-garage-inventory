@@ -7,7 +7,7 @@ from openai import OpenAI
 load_dotenv()
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 if not OPENAI_API_KEY:
-    st.error("Missing OpenAI API key in .env file!")
+    st.error("Missing OpenAI API key in .streamlit/secrets.toml file!")
     st.stop()
 
 # Import LangChain and LlamaIndex components
