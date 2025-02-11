@@ -1,4 +1,5 @@
 .streamlit/secrets.toml
+.streamlit/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -7,6 +8,7 @@ __pycache__/
 
 # C extensions
 *.so
+
 
 # Distribution / packaging
 .Python
@@ -26,6 +28,8 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+index_storage/
+storage/
 MANIFEST
 
 # PyInstaller
