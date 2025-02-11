@@ -50,15 +50,15 @@ bottle jack is on the left side of the workbench on the west side of the garage.
 
 Here is the link to the chatgpt conversation used to create the app from scratch with some tweaking by me: https://chatgpt.com/share/67a4b9ae-d20c-800f-b920-00f6bc600db7
 
-Make sure to create a .env file in your home directory and put this line in your .env file for loading your OPENAI_API_KEY that the app uses to communicate with the gpt-4o-mini LLM
+Make sure to create a .streamlit directory in the root directory where streamlit_app.py is located and a file 'secrets.toml' in this directory and put this line in the file for loading your OPENAI_API_KEY that the app uses to communicate with the gpt-4o-mini LLM
 
-export OPENAI_API_KEY="{{your-openai-api-key}}"
+OPENAI_API_KEY = "{{your-openai-api-key}}"
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jons-garage-inventory.streamlit.app/)
 
 ### How to run it on your own machine
 
-1. Install the requirements
+1. Install the requirements (on Windows you might need to uncomment the two pywin32 lines)
 
    ```
    $ pip install -r requirements.txt
