@@ -5,7 +5,7 @@ from openai import OpenAI
 
 # Load your OpenAI API key from the .env file
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.environ("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     st.error("Missing OpenAI API key in .env file!")
     st.stop()

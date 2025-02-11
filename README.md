@@ -52,12 +52,7 @@ Here is the link to the chatgpt conversation used to create the app from scratch
 
 Make sure to create a .env file in your home directory and put this line in your .env file for loading your OPENAI_API_KEY that the app uses to communicate with the gpt-4o-mini LLM
 
-export OPENAI_API_KEY="<your-openai-api-key>"
-
-Also personally I wound up adding -->
-export PIP_BREAK_SYSTEM_PACKAGES=1
-
-I had to use that break system packages export because it was making me install the packages in a virtual environment and I just didn't want to do that but that is probably the preferred way to do it.
+export OPENAI_API_KEY="{{your-openai-api-key}}"
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
@@ -72,5 +67,5 @@ I had to use that break system packages export because it was making me install 
 2. Run the app
 
    ```
-   $ streamlit run jons_garage_inventory.py
+   $ streamlit run streamlit_app.py
    ```
